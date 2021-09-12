@@ -6,8 +6,8 @@ public abstract class Cell : MonoBehaviour
     public bool IsActive = false;
 
     [SerializeField] protected SpriteRenderer spriteRenderer;
-    [SerializeField] protected Color ActiveColor;
-    [SerializeField] protected Color UnactiveColor;
+    [SerializeField] protected Color activeColor;
+    [SerializeField] protected Color unactiveColor;
 
     protected List<Cell> neighbours = new List<Cell>();
     protected bool newState;

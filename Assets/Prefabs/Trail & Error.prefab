@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1224718963485548938}
   - component: {fileID: 1224718963485548939}
-  - component: {fileID: 1789780228182779458}
+  - component: {fileID: 7215386873469449619}
   m_Layer: 0
-  m_Name: Game Of Life
+  m_Name: Trail & Error
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1789780228182779458
+--- !u!114 &7215386873469449619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,15 +92,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1224718963485548940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13eed37ca96c6e6448753bd69ace497c, type: 3}
+  m_Script: {fileID: 11500000, guid: de06cf390e705eb4cafad3161f66efd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsActive: 0
   spriteRenderer: {fileID: 1224718963485548939}
-  activeColor: {r: 1, g: 0.64289945, b: 0, a: 0}
-  unactiveColor: {r: 0.968729, g: 1, b: 0, a: 0}
-  blendColor: {r: 1, g: 1, b: 1, a: 1}
-  minOpacity: 0.25
-  opacityPerCycle: 0.25
-  RainbowBlend: 0
-  alphaBlend: 1
+  activeColor: {r: 1, g: 1, b: 1, a: 0}
+  unactiveColor: {r: 0, g: 0, b: 0, a: 0}
+  needAlive: 0
+  needDead: 7

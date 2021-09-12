@@ -59,11 +59,11 @@ public class GameOfLife : Cell
             if(RainbowBlend)
             {
                 rainbow = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-                blend = (1f - alpha) * rainbow + alpha * ActiveColor;
+                blend = (1f - alpha) * rainbow + alpha * activeColor;
             }
             else
             {
-                blend = (1f - alpha) * blendColor + alpha * ActiveColor;
+                blend = (1f - alpha) * blendColor + alpha * activeColor;
             }
 
             if(alphaBlend)
@@ -75,7 +75,7 @@ public class GameOfLife : Cell
         }
         else
         {
-            spriteRenderer.color = UnactiveColor;
+            spriteRenderer.color = unactiveColor;
             generationsAlive = 0;
         }
     }
